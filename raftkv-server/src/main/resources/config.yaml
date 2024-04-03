@@ -1,0 +1,12 @@
+# 本节点绑定的端口号
+port: 12233
+# 其余的节点信息
+remove_nodes:
+  - host: 1.2.3.4
+    port: 23466
+  - host: 2.3.4.5
+    port: 23466
+request_vote_timeout_ms: 2000
+# 心跳超时时间间隔要比超时选举时间间隔长
+election_timeout_ms: 2000
+heartbeat_timeout_ms: 3000
